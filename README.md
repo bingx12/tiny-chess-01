@@ -8,7 +8,7 @@ A 4 KB Python chess engine: 0x88 board, negamax with PVS, alpha-beta, quiescence
 
 ## Local results
 
-Packed entrypoint `main.py` (4,071 bytes, ≤ 4,096 cap) vs the house gauntlet: trial-0 W/D/L 3/1/2, 3.5/6 points, Elo 1,364; trial-1 4/1/1, Elo 1,545; trial-2 4/2/0, Elo 1,654 — three-trial mean Elo 1,521, above the 1,154 practice floor and the sunfish baseline's 1,365 mean. Node budgets are capped at 300,000 for the strongest opponents so no move exceeds the gauntlet's 10 s per-move limit (a 400k budget timed out once in a complex Semi-Slav). Perft verified on the readable and minified sources (perft(3) = 8,902 on the start position; all four known positions correct).
+Packed entrypoint `main.py` (4,090 bytes, ≤ 4,096 cap) vs the house gauntlet: trial-0 W/D/L 3/1/2, 3.5/6 points, Elo 1,364; trial-1 4/1/1, Elo 1,545; trial-2 4/2/0, Elo 1,654 — three-trial mean Elo 1,521, above the 1,154 practice floor and the sunfish baseline's 1,365 mean. Node budgets are capped at 300,000 for the strongest opponents so no move exceeds the gauntlet's 10 s per-move limit (a 400k budget timed out once in a complex Semi-Slav). Perft verified on the readable and minified sources (perft(3) = 8,902 on the start position; all four known positions correct).
 
 ## Run it
 
